@@ -4,8 +4,8 @@ import { JobdetailComponent } from './pages/jobdetail/jobdetail.component';
 import { HomeComponent } from './pages/home/home.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'job/:id', component: JobdetailComponent },
+  { path: '', component: HomeComponent, pathMatch: 'full' },
+  { path: 'job/:id', component: JobdetailComponent, pathMatch: 'full' },
 ];
 
 @NgModule({

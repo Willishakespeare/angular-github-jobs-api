@@ -39,15 +39,6 @@ export class ContainerjobComponent implements OnInit {
             document.getElementById(
               'CompanyDescId'
             ).innerHTML = this.lis.description;
-            this.httpClient
-              .get(
-                `https://api.allorigins.win/raw?url=https://jobs.github.com/positions/${params['id']}.json?markdown=true`
-              )
-              .subscribe((res) => {
-                this.li = res;
-                const templis = this.li;
-                this.lis.how_to_apply = templis.how_to_apply;
-              });
           });
       }, 0);
     });
