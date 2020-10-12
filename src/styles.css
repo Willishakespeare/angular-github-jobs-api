@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+html,
+body,
+app-root {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  background-color: #f6f7fb;
+}

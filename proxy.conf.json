@@ -1,0 +1,10 @@
+{
+  "/posts": {
+    "target": "https://jobs.github.com",
+    "secure": true,
+    "pathRewrite": {
+      "^/posts": ""
+    },
+    "changeOrigin": true
+  }
+}
